@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		3ADB80F719D0806F006C489E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3ADB80F619D0806F006C489E /* main.cpp */; };
 		3ADB80F919D0806F006C489E /* Roguelike_.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3ADB80F819D0806F006C489E /* Roguelike_.1 */; };
+		3ADB810219D080C9006C489E /* Piece.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3ADB80FF19D080C9006C489E /* Piece.cpp */; };
+		3ADB810519D08C80006C489E /* Board.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3ADB810319D08C80006C489E /* Board.cpp */; };
+		3ADB810819D096C8006C489E /* Square.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3ADB810619D096C8006C489E /* Square.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +31,12 @@
 		3ADB80F319D0806F006C489E /* Roguelike_ */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Roguelike_; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ADB80F619D0806F006C489E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		3ADB80F819D0806F006C489E /* Roguelike_.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Roguelike_.1; sourceTree = "<group>"; };
+		3ADB80FF19D080C9006C489E /* Piece.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Piece.cpp; sourceTree = "<group>"; };
+		3ADB810019D080C9006C489E /* Piece.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Piece.h; sourceTree = "<group>"; };
+		3ADB810119D080C9006C489E /* Square.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Square.h; sourceTree = "<group>"; };
+		3ADB810319D08C80006C489E /* Board.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Board.cpp; sourceTree = "<group>"; };
+		3ADB810419D08C80006C489E /* Board.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Board.h; sourceTree = "<group>"; };
+		3ADB810619D096C8006C489E /* Square.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Square.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +69,12 @@
 		3ADB80F519D0806F006C489E /* Roguelike_ */ = {
 			isa = PBXGroup;
 			children = (
+				3ADB810019D080C9006C489E /* Piece.h */,
+				3ADB80FF19D080C9006C489E /* Piece.cpp */,
+				3ADB810119D080C9006C489E /* Square.h */,
+				3ADB810619D096C8006C489E /* Square.cpp */,
+				3ADB810419D08C80006C489E /* Board.h */,
+				3ADB810319D08C80006C489E /* Board.cpp */,
 				3ADB80F619D0806F006C489E /* main.cpp */,
 				3ADB80F819D0806F006C489E /* Roguelike_.1 */,
 			);
@@ -117,6 +132,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3ADB810519D08C80006C489E /* Board.cpp in Sources */,
+				3ADB810819D096C8006C489E /* Square.cpp in Sources */,
+				3ADB810219D080C9006C489E /* Piece.cpp in Sources */,
 				3ADB80F719D0806F006C489E /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -227,6 +245,7 @@
 				3ADB80FE19D0806F006C489E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

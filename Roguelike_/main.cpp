@@ -7,12 +7,25 @@
 //
 
 #include <iostream>
+#include "Square.h"
+#include "Piece.h"
+#include "Board.h"
 
-int main(int argc, const char * argv[])
-{
+using namespace std;
 
+int main(){
     // insert code here...
     std::cout << "Hello, World!\n";
+
+    Piece myPiece;
+    Square mySquare;
+    cout << "Pieza: "<< myPiece.getSymbol()<< endl;
+    cout << "Casilla: "<< mySquare.seeSquare()<< endl;
+    
+    Board myChessBoard;
+    cout << "Tablero: ";
+    myChessBoard.printBoard();
+    
     return 0;
 }
 
