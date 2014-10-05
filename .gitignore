@@ -1,0 +1,8 @@
+#Ignora los ficheros terminados en .o
+*.o
+
+#Ignora los ficheros acabados en ~
+*~
+
+#Ignora los ficheros acabados en .class
+*.class

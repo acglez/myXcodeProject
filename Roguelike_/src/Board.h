@@ -23,5 +23,6 @@ public:
     Board();
     ~Board();
     void printBoard();
+    void printSquare();
 };
 #endif /* defined(__Roguelike___Board__) */

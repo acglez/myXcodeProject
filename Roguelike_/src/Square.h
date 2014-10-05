@@ -18,5 +18,6 @@ public:
 	char seeSquare();
 	void setPeople(Piece*);
 	void setObject(Piece*);
+	void setConstructorElement(Piece*);
 };
 #endif /* SQUARE_H_ */

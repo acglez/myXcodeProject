@@ -4,10 +4,6 @@ Piece::Piece(){
     symbol= '.';
 }
 
-Piece::Piece(char &theSymbol){
-    symbol= theSymbol;
-}
-
 Piece::~Piece(){
     
 }

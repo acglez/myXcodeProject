@@ -20,18 +20,17 @@ Board::~Board(){
         delete [] myBoard[i];
     }
     delete myBoard;
-    myBoard = nullptr;
 }
 
 void Board::printBoard(){
-    cout << "Voy a entrar en el printBoard"<<endl;
-    cout << "row: "<< row << endl;
-    for (int i=0; i<= row; i++) {
-        cout <<"- Dentro del primer for."<<endl;
-        for (int j=0; j<= col; j++) {
+    for (int i=0; i< row; i++) {
+        for (int j=0; j< col; j++) {
             cout << myBoard[i][j].seeSquare();
         }
         cout<< endl;
     }
-    cout << "Sali de escribir el tablero" << endl;
+}
+
+void Board::printSquare(){
+    cout << myBoard[0][0].seeSquare()<<endl;
 }

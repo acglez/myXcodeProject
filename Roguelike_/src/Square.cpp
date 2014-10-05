@@ -43,12 +43,16 @@ void Square::setPeople(Piece *pCharacter){
 }
 
 
-void Square::setObject(Piece* tObject){
+void Square::setObject(Piece *tObject){
 	if(object[0]== &background){
 		object[0]= tObject;
 	}
 	else if(object[1]== &background){
 		object[1]= tObject;
 	}
+}
+
+void Square::setConstructorElement(Piece *dConstructorElement){
+	constructorElement = dConstructorElement;
 }
 

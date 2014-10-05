@@ -23,8 +23,9 @@ int main(){
     cout << "Casilla: "<< mySquare.seeSquare()<< endl;
     
     Board myChessBoard;
-    cout << "Tablero: ";
+    cout << "Tablero: "<< endl;
     myChessBoard.printBoard();
+    myChessBoard.printSquare();
     
     return 0;
 }

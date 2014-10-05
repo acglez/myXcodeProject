@@ -9,7 +9,6 @@ protected:
     char symbol;
 public:
     Piece();
-    Piece(char&);
     ~Piece();
     void setSymbol(char&);
     char getSymbol();
