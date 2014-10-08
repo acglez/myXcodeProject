@@ -9,9 +9,9 @@ using namespace std;
 class Square {
 private:
     Piece background;
-	Piece *people;
-	Piece *object[2];
-    Piece *constructorElement;
+	Piece *ptrPeople;
+	Piece *ptrObject[2];
+    Piece *ptrConstructorElement;
 public:
 	Square();
 	~Square();

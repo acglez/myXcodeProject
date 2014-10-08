@@ -18,7 +18,7 @@ class Board{
 private:
     int static const row= 10;
     int static const col= 10;
-    Square **myBoard;
+    Square **ptrMyBoard;
 public:
     Board();
     ~Board();

@@ -9,28 +9,28 @@
 #include "Board.h"
 
 Board::Board(){
-    myBoard = new Square* [row];
+    ptrMyBoard = new Square* [row];
     for (int i=0; i<= row; i++) {
-        myBoard[i]= new Square [col];
+        ptrMyBoard[i]= new Square [col];
     }
 }
 
 Board::~Board(){
     for (int i=0; i<=row; i++) {
-        delete [] myBoard[i];
+        delete [] ptrMyBoard[i];
     }
-    delete myBoard;
+    delete ptrMyBoard;
 }
 
 void Board::printBoard(){
     for (int i=0; i< row; i++) {
         for (int j=0; j< col; j++) {
-            cout << myBoard[i][j].seeSquare();
+            cout << ptrMyBoard[i][j].seeSquare();
         }
         cout<< endl;
     }
 }
 
 void Board::printSquare(){
-    cout << myBoard[0][0].seeSquare()<<endl;
+    cout << ptrMyBoard[0][0].seeSquare()<<endl;
 }

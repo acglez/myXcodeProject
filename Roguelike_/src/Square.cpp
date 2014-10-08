@@ -9,10 +9,10 @@
 #include "Square.h"
 
 Square::Square() {
-	people = &background;
-	object[0]= &background;
-	object[1]= &background;
-	constructorElement = &background;
+	ptrPeople = &background;
+	ptrObject[0]= &background;
+	ptrObject[1]= &background;
+	ptrConstructorElement = &background;
     
 }
 
@@ -23,36 +23,36 @@ Square::~Square() {
 
 
 char Square::seeSquare(){
-	if(people != &background){
-		return people->getSymbol();
+	if(ptrPeople != &background){
+		return ptrPeople->getSymbol();
 	}
-	else if(object[0]!= &background){
-		return object[0]->getSymbol();
+	else if(ptrObject[0]!= &background){
+		return ptrObject[0]->getSymbol();
 	}
-    else if(object[1]!= &background){
-        return object[1]->getSymbol();
+    else if(ptrObject[1]!= &background){
+        return ptrObject[1]->getSymbol();
     }
     else{
-        return constructorElement->getSymbol();
+        return ptrConstructorElement->getSymbol();
     }
 }
 
 
 void Square::setPeople(Piece *pCharacter){
-	people = pCharacter;
+	ptrPeople = pCharacter;
 }
 
 
 void Square::setObject(Piece *tObject){
-	if(object[0]== &background){
-		object[0]= tObject;
+	if(ptrObject[0]== &background){
+		ptrObject[0]= tObject;
 	}
-	else if(object[1]== &background){
-		object[1]= tObject;
+	else if(ptrObject[1]== &background){
+		ptrObject[1]= tObject;
 	}
 }
 
 void Square::setConstructorElement(Piece *dConstructorElement){
-	constructorElement = dConstructorElement;
+	ptrConstructorElement = dConstructorElement;
 }
 
