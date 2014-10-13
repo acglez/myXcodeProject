@@ -1,13 +1,18 @@
 #include "Actor.h"
 
 Actor::Actor():Piece(){
-    life = 5;
+    life = 3;
+    strong = 0;
 }
 
 Actor::~Actor(){
     
 }
 
-void Actor::move(int &row, int &col){
-    
+int Actor::getStrong(){
+    return strong;
+}
+
+void Actor::lessLife(int &num){
+    life = life - num;
 }

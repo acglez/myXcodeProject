@@ -6,8 +6,10 @@ using namespace std;
 class Actor:public Piece{
 protected:
     int life;
+    int strong;
 public:
     Actor();
     ~Actor();
-    void move(int&, int&); //No se si ponerlo aquí.
+    int getStrong();
+    void lessLife(int&);
 };

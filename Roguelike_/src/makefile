@@ -1,7 +1,7 @@
 all: main
 
-main: main.o Piece.o Square.o Board.o Actor.o
-	g++ main.o Piece.o Square.o Board.o Actor.o -o main
+main: main.o Piece.o Square.o Board.o Actor.o Hero.o Monster.o
+	g++ main.o Piece.o Square.o Board.o Actor.o Hero.o Monster.o -o main
 
 main.o:
 	g++ -c main.cpp
@@ -17,6 +17,12 @@ Board.o:
 	
 Actor.o:
 	g++ -c Actor.cpp
+
+Hero.o:
+	g++ -c Hero.cpp
+	
+Monster.o:
+	g++ -c Monster.cpp
 
 clean:
 	rm -rf *.o main
