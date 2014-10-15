@@ -16,7 +16,7 @@ void Hero::Attack(Actor &enemy){
         cout << "¡¡Bien hecho!! Has ganado el ataque.\n";
     }
     else if(strong < enemy.getStrong()){
-        life = life--;
+        life--;
         cout << "Vaya, tu rival ha sido mas poderoso que tu.\n";
     }
     else{
