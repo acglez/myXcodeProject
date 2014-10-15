@@ -1,7 +1,7 @@
 all: main
 
-main: main.o Piece.o Square.o Board.o Actor.o Hero.o Monster.o Dragon.o Trol.o ConstructorPart.o
-	g++ main.o Piece.o Square.o Board.o Actor.o Hero.o Monster.o Dragon.o Trol.o ConstructorPart.o -o main
+main: main.o Piece.o Square.o Board.o Actor.o Hero.o Monster.o Dragon.o Trol.o ConstructorPart.o Wall.o Floor.o Door.o Hallway.o
+	g++ main.o Piece.o Square.o Board.o Actor.o Hero.o Monster.o Dragon.o Trol.o ConstructorPart.o Wall.o Floor.o Door.o Hallway.o -o main
 
 main.o:
 	g++ -c main.cpp
@@ -32,6 +32,18 @@ Trol.o:
 
 ConstructorPart.o:
 	g++ -c ConstructorPart.cpp
+
+Wall.o:
+	g++ -c Wall.cpp
+
+Floor.o:
+	g++ -c Floor.cpp
+
+Door.o:
+	g++ -c Door.cpp
+
+Hallway.o:
+	g++ -c Hallway.cpp
 
 clean:
 	rm -rf *.o main
